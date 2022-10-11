@@ -1,0 +1,15 @@
+$primary : #e0e1dc;
+.app{
+    .conatiner{
+
+        // LOGIN && REGISTER
+        .auth{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: $primary;
+            flex-direction: column;
+        }
+    }
+}
