@@ -1,4 +1,10 @@
-$primary : #e0e1dc;
+$bg-color : #e0e1dc;
+$primary-color : #1d2538;
+$secondary-color : #475874;
+$outline-color : #7c8da5;
+$white : #ffffff;
+$blue : #0038bb;
+$error-color : #cca152;
 .app{
     .conatiner{
 
@@ -8,8 +14,74 @@ $primary : #e0e1dc;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: $primary;
+            background-color: $bg-color;
             flex-direction: column;
+        }
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            background-color: $white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 $outline-color;
+
+            h1{
+                font-size: 2.5rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                color: $primary-color;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                padding: 14px;
+                width: 300px;
+                gap: 20px;
+                background-color: $white;
+
+        
+                input{
+                    padding: 10px;
+                    border: 1px solid $outline-color;
+                    outline: none;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    border: none;
+                    border-bottom: 1px solid $outline-color;
+                    color
+                    : $primary-color;
+                }
+                button{
+                    margin: 24px 0;
+                    padding : 14px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: $primary-color;
+                    color: $white;
+                    cursor: pointer;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $primary-color;
+                    text-align: center;
+                    background-color: $error-color;
+                    padding: 14px 0;
+                    border-radius: 10px;
+                }
+                span{
+                    font-size: 14px;
+                    text-align: center;
+                    a{
+                        color: $blue;
+                        text-decoration: none;
+                    }
+                }
+            }
+    
         }
     }
 }
