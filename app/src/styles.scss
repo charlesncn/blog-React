@@ -1,87 +1,283 @@
-$bg-color : #e0e1dc;
-$primary-color : #1d2538;
-$secondary-color : #475874;
-$outline-color : #7c8da5;
-$white : #ffffff;
-$blue : #0038bb;
-$error-color : #cca152;
-.app{
-    .conatiner{
+$bg-color: #e0e1dc;
+$primary-color: #1d2538;
+$secondary-color: #475874;
+$outline-color: #7c8da5;
+$white: #ffffff;
+$blue: #0038bb;
+$orange: #cca152;
+.app {
+  background-color: $bg-color;
+  min-height: 100vh;
+  margin: 0;
 
-        // LOGIN && REGISTER
-        .auth{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+  .conatiner {
+    width: 80vw;
+    margin: 0 auto;
+    //--------------- LOGIN REGISTER ---------------
+    .auth {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: $bg-color;
+      flex-direction: column;
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        background-color: $bg-color;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 $outline-color;
+
+        h1 {
+          font-size: 2.5rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          color: $primary-color;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          padding: 14px;
+          width: 300px;
+          gap: 20px;
+
+          input {
+            padding: 10px;
+            border: 1px solid $outline-color;
+            outline: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border: none;
+            border-bottom: 1px solid $outline-color;
+            color: $primary-color;
             background-color: $bg-color;
-            flex-direction: column;
-        }
-        .form-container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 400px;
-            background-color: $white;
-            padding: 20px;
+          }
+          button {
+            margin: 24px 0;
+            padding: 14px;
             border-radius: 10px;
-            box-shadow: 0 0 10px 0 $outline-color;
-
-            h1{
-                font-size: 2.5rem;
-                font-weight: 600;
-                margin-bottom: 1rem;
-                color: $primary-color;
+            border: none;
+            background-color: $primary-color;
+            color: $white;
+            cursor: pointer;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 500;
+            color: $primary-color;
+            text-align: center;
+            background-color: $orange;
+            padding: 14px 0;
+            border-radius: 10px;
+          }
+          span {
+            font-size: 14px;
+            text-align: center;
+            a {
+              color: $blue;
+              text-decoration: none;
             }
-            form{
-                display: flex;
-                flex-direction: column;
-                padding: 14px;
-                width: 300px;
-                gap: 20px;
-                background-color: $white;
-
-        
-                input{
-                    padding: 10px;
-                    border: 1px solid $outline-color;
-                    outline: none;
-                    font-size: 1.1rem;
-                    font-weight: 500;
-                    border: none;
-                    border-bottom: 1px solid $outline-color;
-                    color
-                    : $primary-color;
-                }
-                button{
-                    margin: 24px 0;
-                    padding : 14px;
-                    border-radius: 10px;
-                    border: none;
-                    background-color: $primary-color;
-                    color: $white;
-                    cursor: pointer;
-                }
-                p{
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: $primary-color;
-                    text-align: center;
-                    background-color: $error-color;
-                    padding: 14px 0;
-                    border-radius: 10px;
-                }
-                span{
-                    font-size: 14px;
-                    text-align: center;
-                    a{
-                        color: $blue;
-                        text-decoration: none;
-                    }
-                }
-            }
-    
+          }
         }
+      }
     }
+    //--------------- LOGIN REGISTER END ---------------
+
+    //--------------- NAVBAR ---------------
+
+    .navbar {
+      .container {
+        display: flex;
+        margin: 14px 0;
+        padding: 10px 0;
+        justify-content: space-between;
+
+        .logo {
+          img {
+            width: 82px;
+          }
+        }
+        .links {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 10px;
+          .menu {
+            display: flex;
+            align-items: center;
+            a,
+            span {
+              cursor: pointer;
+              text-decoration: none;
+              color: $primary-color;
+              font-size: 16px;
+              font-weight: 500;
+              margin: 0 10px;
+              padding: 5px 15px;
+              border-radius: 5px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                color: $blue;
+              }
+            }
+          }
+          .tags {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            a {
+              text-decoration: none;
+              color: $secondary-color;
+              font-size: 16px;
+              font-weight: 300;
+              margin: 0 10px;
+              padding: 5px 15px;
+              border-radius: 5px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                background-color: $secondary-color;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //--------------- NAVBAR END ---------------
+
+    // --------------- FOOTER ---------------
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $secondary-color;
+      padding: 20px;
+
+      .logo img {
+        width: 160px;
+      }
+
+      .message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .btns{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        form {
+          width: 30vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          border-radius: 10px;
+          border: 1px solid $outline-color;
+        //   box-shadow: 0 0 1px 0 $outline-color;
+
+          span {
+            color: $white;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 10px 20px;
+          }
+          input {
+            padding: 10px;
+            border: 1px solid $outline-color;
+            outline: none;
+            font-size: 14px;
+            font-weight: 200;
+            border: none;
+            border-bottom: 1px solid $outline-color;
+            color: $white;
+            background-color: inherit;
+            margin: 0 20px;
+          }
+          textarea {
+            max-height: 60px;
+            height: 30px;
+            max-width: 90%;
+            padding: 10px;
+            border: 1px solid $outline-color;
+            outline: none;
+            font-size: 14px;
+            font-weight: 300;
+            border: none;
+            border-bottom: 1px solid $outline-color;
+            color: $white;
+            background-color: inherit;
+            margin: 0 20px;
+          }
+        }
+            
+          button {
+            padding: 10px;
+            width: 240px;
+            border: none;
+            border-radius: 10px;
+            background-color: $outline-color;
+            color: $white;
+            cursor: pointer;
+            margin: 10px 20px;
+            transition: all ease 0.3s;
+            &:hover:nth-child(1) {
+              background-color: $primary-color;
+            }
+            &:hover:nth-child(2) {
+                background-color: $orange;
+              }
+          }
+      }
+      .socialmedia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        ul {
+          list-style-type: none;
+
+          li {
+            cursor: pointer;
+            text-decoration: none;
+            color: $white;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0 10px;
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: $outline-color;
+            }
+          }
+        }
+      }
+      p{
+            color: $white;
+            font-size: 14px;
+            font-weight: 300;
+            margin: 0 10px;
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            a{
+                color: $white;
+                text-decoration: none;
+            &:hover {
+                color: $orange;
+            }
+            }
+      }
+    }
+  }
 }
