@@ -25,6 +25,10 @@ const Single = () => {
                 <span>{post.username}</span>
                 <p>posted 11 hrs ago.</p>
               </div>
+              <div className="edit">
+                <i className="fas fa-ellipsis-h"></i>
+                
+              </div>
             </div>
           </div>
           <div className="menu"></div>
