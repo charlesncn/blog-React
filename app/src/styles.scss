@@ -150,122 +150,119 @@ $orange: #cca152;
 
     //--------------- NAVBAR END ---------------
 
-
     //--------------- HOME ---------------
-    .home{
+    .home {
+      .posts {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
 
-        .posts{
-            margin-top: 50px;
+        .post {
+          display: flex;
+          gap: 100px;
+
+          &:nth-child(2n + 1) {
+            flex-direction: row-reverse;
+          }
+
+          .img {
+            flex: 2;
+            position: relative;
+
+            //    &::after{
+            //     content: "";
+            //     width: 100%;
+            //     height: 100%;
+            //     background-color: $primary-color;
+            //     position: absolute;
+            //     top: 20px;
+            //    left: -20px;
+            //    }
+            img {
+              width: 100%;
+              max-height: 400px;
+              object-fit: cover;
+            }
+          }
+          .content {
+            flex: 3;
             display: flex;
             flex-direction: column;
-            gap: 150px;
+            justify-content: space-between;
 
-            .post{
-                display: flex;
-                gap: 100px;
-
-                &:nth-child(2n+1){
-                    flex-direction: row-reverse;
-                }
-                
-                .img{
-                   flex: 2;
-                   position: relative;
-
-                //    &::after{
-                //     content: "";
-                //     width: 100%;
-                //     height: 100%;
-                //     background-color: $primary-color;
-                //     position: absolute;
-                //     top: 20px;
-                //    left: -20px;
-                //    }
-                     img{
-                          width: 100%;
-                          max-height: 400px;
-                          object-fit: cover;
-                     }
-                }
-                .content{
-                    flex: 3;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-
-                    h3, a{
-                        cursor: pointer;
-                        font-size: 2.5rem;
-                        font-weight: 500;
-                        color: $primary-color;
-                        text-decoration: none;
-                    }
-                    p{
-                        font-size: 1.2rem;
-                        font-weight: 300;
-                        color: $primary-color;
-                    }
-
-                    .readMore{
-                        width: max-content;
-                        font-size: 1.2rem;
-                        padding: 10px 20px;
-                        cursor: pointer;
-                        background-color: $bg-color;
-                        border: none;
-                        color: $primary-color;
-                        border-radius: 5px;
-                        border: 1px solid $primary-color;
-                        transition: all ease 0.3s;
-                        &:hover{
-                            background-color: $primary-color;
-                            color: $white;
-                        }
-                    }
-                }
+            h3,
+            a {
+              cursor: pointer;
+              font-size: 2.5rem;
+              font-weight: 500;
+              color: $primary-color;
+              text-decoration: none;
             }
-        }
-    }
+            p {
+              font-size: 1.2rem;
+              font-weight: 300;
+              color: $primary-color;
+            }
 
+            .readMore {
+              width: max-content;
+              font-size: 1.2rem;
+              padding: 10px 20px;
+              cursor: pointer;
+              background-color: $bg-color;
+              border: none;
+              color: $primary-color;
+              border-radius: 5px;
+              border: 1px solid $primary-color;
+              transition: all ease 0.3s;
+              &:hover {
+                background-color: $primary-color;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
 
     // --------------- HOME END ---------------
 
     // --------------- SINGLE POST ---------------
 
-    .single-post{
-        display: flex;
-        gap: 50px;
+    .single-post {
+      display: flex;
+      gap: 50px;
 
-        .content{
-            flex: 5;
-            img{
-              width: 100%;
-              height: 300px;
-              object-fit: cover;
-            }
-            .user{
-              display: flex;
-              align-items: center;
-              gap: 20px;
-              font-size: 14px;
-              img{
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                object-fit: cover;
-                border: 2px solid $primary-color;
-              }
-              span{
-                font-weight: 600;
-              }
-            }
+      .content {
+        flex: 5;
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
         }
-        .menu{
-            flex: 2;
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          font-size: 14px;
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid $primary-color;
+          }
+          span {
+            font-weight: 600;
+          }
         }
+      }
+      .menu {
+        flex: 2;
+      }
     }
     // --------------- SINGLE POST END ---------------
-
 
     // --------------- FOOTER ---------------
     .footer {
