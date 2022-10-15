@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Sidebar from "../componests/Sidebar";
 
 const Single = () => {
   const post = [
@@ -26,11 +28,21 @@ const Single = () => {
                 <p>posted 11 hrs ago.</p>
               </div>
               <div className="edit">
-                <i className="fas fa-ellipsis-h"></i>
+                <Link to="/new">
+                  <i class="fa fa-pencil" aria-hidden="true"></i>
+                </Link>
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
               </div>
             </div>
+            <h1>{post.title}</h1>
+            <p>{post.description}</p>
           </div>
-          <div className="menu"></div>
+          <div className="sideBar">
+          <Sidebar/>
+          </div>
         </div>
       ))}
     </div>

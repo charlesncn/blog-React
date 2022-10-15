@@ -246,6 +246,7 @@ $orange: #cca152;
           align-items: center;
           gap: 20px;
           font-size: 14px;
+          margin-top: 12px;
           img {
             width: 50px;
             height: 50px;
@@ -256,9 +257,57 @@ $orange: #cca152;
           span {
             font-weight: 600;
           }
+          .edit{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin: 0 30px;
+
+            .fa{
+              cursor: pointer;
+              height: 24px;
+              width: 24px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 14px;
+              color: $primary-color;
+              padding: 4px;
+              transition: all ease 0.5s;
+              border-radius: 50%;
+              &:nth-child(-n+3){
+                border: 1px solid $primary-color;
+                &:hover{
+                  background-color: $primary-color;
+                  color: $white;
+                }
+              }
+              &:nth-child(4){
+                border: 1px solid $orange;
+                &:hover{
+                  background-color: $orange;
+                  color: $white;
+                }
+              }
+              &:hover{
+                color: $white;
+              }
+            }
+          }
+        }
+        h1{
+          margin: 24px 0;
+        }
+        p{
+          font-size: 1.2rem;
+          font-weight: 300;
+          color: $primary-color;
+          line-height: 2rem;
+          text-align: justify;
         }
       }
-      .menu {
+      .sideBar {
         flex: 2;
       }
     }
