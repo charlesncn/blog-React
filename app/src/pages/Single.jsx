@@ -15,7 +15,7 @@ const Single = () => {
   ];
   return (
     <div className="post-cotainer">
-      {post.map(post => (
+      {post.map((post) => (
         <div className="single-post" key={post.id}>
           <div className="content">
             <img src={post.img} alt="" />
@@ -27,7 +27,6 @@ const Single = () => {
               </div>
               <div className="edit">
                 <i className="fas fa-ellipsis-h"></i>
-                
               </div>
             </div>
           </div>
