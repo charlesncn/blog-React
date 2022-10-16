@@ -245,6 +245,10 @@ $orange: #cca152;
 
     // --------------- HOME END ---------------
 
+
+
+
+
     // --------------- SINGLE POST ---------------
 
     .single-post {
@@ -375,6 +379,32 @@ $orange: #cca152;
 
       // --------------- SIDEBAR END ---------------
     }
+    // --------------- SINGLE POST END ---------------
+
+
+
+
+    // --------------- CREATE POST ---------------
+
+    .create{
+      margin: 24px;
+      display: flex;
+      gap: 24px;
+
+      .content{
+        flex: 5;
+      }
+      .menu{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+    // --------------- CREATE POST END ---------------
+
+
+
 
     // --------------- FOOTER ---------------
     .footer {
