@@ -53,7 +53,7 @@ function Footer() {
         </ul>
       </div>
       <p>
-        © 2021 All rights reserved. Designed by <a href="">Njuguna</a>
+        © 2021 All rights reserved. Designed by <a href="https://github.com/charlesncn">Njuguna</a>
       </p>
     </div>
   );
