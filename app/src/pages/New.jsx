@@ -7,14 +7,33 @@ const New = () => {
   return (
     <div className="create">
       <div className="content">
-        <input type="text" placeholder="Title" />
-        <div className="editorContainer">
-          <ReactQuill
-            className="editor"
-            theme="snow"
-            value={value}
-            onChange={setValue}
-          />
+        <div className="post-info">
+          <input type="text" placeholder="Title" />
+          <div className="editorContainer">
+            <ReactQuill
+              className="editor"
+              theme="snow"
+              value={value}
+              onChange={setValue}
+            />
+          </div>
+        </div>
+        <div className="preview">
+          <h1>Preview</h1>
+          <div className="preview-content">
+            <h2>Developing a Website</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quae, voluptatum, quod, voluptas quibusdam voluptates quidem
+              voluptatibus quos quia quas voluptate. Quisquam, quibusdam
+              voluptatibus. Quisquam, quibusdam voluptatibus. Quisquam, quibusdam
+              voluptatibus. Quisquam, quibusdam voluptatibus. Quisquam, quibusdam
+              voluptatibus. Quisquam, quibusdam voluptatibus. Quisquam, quibusdam
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quae, voluptatum, quod, voluptas quibusdam voluptates quidem
+              voluptatibus quos quia quas voluptate. Quisquam, quibusdam
+            </p>
+          </div>
         </div>
       </div>
       <div className="menu">
