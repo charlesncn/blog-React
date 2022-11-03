@@ -39,8 +39,8 @@ const Navbar = () => {
             <Link to="/?tag=gadgets">
               <h4>Gadgets</h4>
             </Link>
-            <Link to="/?tag=headset">
-              <h4>Headset</h4>
+            <Link to="/?tag=others">
+              <h4>Others</h4>
             </Link>
           </div>
         </div>

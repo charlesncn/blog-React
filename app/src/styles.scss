@@ -117,8 +117,8 @@ $orange: #cca152;
               font-size: 16px;
               font-weight: 500;
               margin: 0 10px;
-              padding: 5px 15px;
-              border-radius: 5px;
+              padding: 4px 15px;
+              border-radius: 4px;
               transition: all 0.3s ease-in-out;
               &:hover {
                 color: $blue;
@@ -135,8 +135,8 @@ $orange: #cca152;
               font-size: 16px;
               font-weight: 300;
               margin: 0 10px;
-              padding: 5px 15px;
-              border-radius: 5px;
+              padding: 4px 15px;
+              border-radius: 4px;
               transition: all 0.3s ease-in-out;
               &:hover {
                 background-color: $secondary-color;
@@ -230,7 +230,7 @@ $orange: #cca152;
               background-color: $bg-color;
               border: none;
               color: $primary-color;
-              border-radius: 5px;
+              border-radius: 4px;
               border: 1px solid $primary-color;
               transition: all ease 0.3s;
               &:hover {
@@ -366,7 +366,7 @@ $orange: #cca152;
             background-color: $bg-color;
             border: none;
             color: $primary-color;
-            border-radius: 5px;
+            border-radius: 4px;
             border: 1px solid $primary-color;
             transition: all ease 0.3s;
             &:hover {
@@ -393,12 +393,132 @@ $orange: #cca152;
 
       .content{
         flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        input{
+          padding: 12px;
+          border: 1px solid $outline-color;
+          background-color: $bg-color;
+        }
+          .editorContainer{
+            height: 300px;
+            overflow: hidden;
+            border: 1px solid $outline-color;
+
+            .editor{
+              height: 100%;
+              border: none;
+            }
+          }
       }
       .menu{
         flex: 2;
         display: flex;
         flex-direction: column;
         gap: 24px;
+        .menu-item{
+          border: 1px solid $outline-color;
+          padding: 8px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 1rem;
+          font-weight: 300;
+          transition: all ease 0.3s;
+          gap: 8px;
+
+
+          h1{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $primary-color;
+          }
+          .upload-file{
+            background-color: $bg-color;
+            color: $primary-color;
+            &:hover {
+              background-color: $primary-color;
+              color: $white;
+            }
+          }
+          label{
+            font-size: 1rem;
+            font-weight: 300;
+            color: $primary-color;
+            padding: 4px 20px;
+            border-radius: 4px;
+            transition: all ease 0.3s;
+            cursor: pointer;
+
+              &:hover{
+                color: $blue;
+              }
+          }
+          .btns{
+            display: flex;
+            justify-content: space-between;
+            transition: all ease 0.3s;
+
+            button{
+              width: 120px;
+              font-size: 1rem;
+              padding: 4px 20px;
+              cursor: pointer;
+              background-color: $bg-color;
+              border: none;
+              border-radius: 4px;
+              transition: all ease 0.3s;
+            }
+            :first-child{
+              background-color: $bg-color;
+              color: $primary-color;
+              border: 1px solid $primary-color;
+              &:hover {
+                background-color: $orange;
+                color: $white;
+                border: 1px solid $orange;
+              }
+            }
+            :last-child{
+              background-color: $bg-color;
+              color: $primary-color;
+              border: 1px solid $primary-color;
+              &:hover {
+                background-color: $primary-color;
+                color: $white;
+              }
+            }
+            
+          }
+          .post-tag{
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            label{
+            transition: all ease 0.6s;
+            background-color: $bg-color;
+            border-radius: 4px;
+            &:hover {
+              background-color: $primary-color;
+              color: $white;
+              label{
+                color: $white;
+              }
+              // selected radio button
+            }
+
+            }
+              input:checked + label{
+                background-color: $orange;
+                color: $white;
+              }
+
+
+          }
+        }
       }
     }
     // --------------- CREATE POST END ---------------
@@ -509,8 +629,8 @@ $orange: #cca152;
             font-size: 16px;
             font-weight: 500;
             margin: 0 10px;
-            padding: 5px 15px;
-            border-radius: 5px;
+            padding: 4px 15px;
+            border-radius: 4px;
             transition: all 0.3s ease-in-out;
             &:hover {
               color: $outline-color;
@@ -523,8 +643,8 @@ $orange: #cca152;
         font-size: 14px;
         font-weight: 300;
         margin: 0 10px;
-        padding: 5px 15px;
-        border-radius: 5px;
+        padding: 4px 15px;
+        border-radius: 4px;
         transition: all 0.3s ease-in-out;
         a {
           color: $primary-color;
