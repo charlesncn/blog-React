@@ -20,7 +20,7 @@ function Footer() {
             id=""
             cols="30"
             rows="5"
-            placeholder="Enter your message"
+            placeholder="Enter your message here"
           ></textarea>
           <div className="btns">
             <button>Send</button>
