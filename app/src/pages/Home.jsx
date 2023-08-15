@@ -34,7 +34,7 @@ const Home = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor",
-      img: "https://dvokhk8ohqhd8.cloudfront.net/assets/engineering_types/android/hero_image-fc5b7ec3e1de4498f823edc8ed1d345d16e52de1c2b4be98d3fb26df086df117.svg",
+      img: "https://3.bp.blogspot.com/-dB6ndKqIAuI/XdWeOASO5AI/AAAAAAAANZA/MSbT9mh6bukxkI-tqnu_GARIZZV5WNVhQCLcBGAsYHQ/s1600/image1.gif",
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ const Home = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor",
-      img: "https://dvokhk8ohqhd8.cloudfront.net/assets/engineering_types/android/hero_image-fc5b7ec3e1de4498f823edc8ed1d345d16e52de1c2b4be98d3fb26df086df117.svg",
+      img: "https://www.elluminatiinc.com/wp-content/uploads/2020/07/blog/androidappdevelopmenttools.png",
     },
     {
       id: 4,
@@ -64,7 +64,7 @@ const Home = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor",
-      img: "https://dvokhk8ohqhd8.cloudfront.net/assets/engineering_types/android/hero_image-fc5b7ec3e1de4498f823edc8ed1d345d16e52de1c2b4be98d3fb26df086df117.svg",
+      img: "https://miro.medium.com/v2/resize:fit:1400/1*tNsfhcY2cq5GBpkhKetLqA.png",
     },
     {
       id: 5,
@@ -79,7 +79,7 @@ const Home = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor",
-      img: "https://dvokhk8ohqhd8.cloudfront.net/assets/engineering_types/android/hero_image-fc5b7ec3e1de4498f823edc8ed1d345d16e52de1c2b4be98d3fb26df086df117.svg",
+      img: "https://www.multirecruit.com/wp-content/uploads/2022/05/mobiledevelopment-1.png",
     },
     {
       id: 6,
@@ -94,7 +94,7 @@ const Home = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor",
-      img: "https://dvokhk8ohqhd8.cloudfront.net/assets/engineering_types/android/hero_image-fc5b7ec3e1de4498f823edc8ed1d345d16e52de1c2b4be98d3fb26df086df117.svg",
+      img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiC2X0sIY_AGvgi6jD8Eh_u8rOdZXKA6PP18tnJdA6jQxR-n4bF6vsIVI2D4FTOnHAlqSY5hJShEjHcRQr7P8QM-YyP3sM3Su_KxFRdBXhg8WUIoXr74luWfFvtgYGJHWdDe_gPnwpCsLR4YhE0U88QcSqrYs3LLjp7dGqQul_pRoerJr__-mD8lUPA/s1600/Android-IO22AndroidDevRecap_Social.png",
     },
     {
       id: 7,
@@ -109,7 +109,7 @@ const Home = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor",
-      img: "https://dvokhk8ohqhd8.cloudfront.net/assets/engineering_types/android/hero_image-fc5b7ec3e1de4498f823edc8ed1d345d16e52de1c2b4be98d3fb26df086df117.svg",
+      img: "https://1.bp.blogspot.com/-b1_n6tOHvWU/YKMssWEjo-I/AAAAAAAAQjk/vIJQsAPUpRQKxR44GoCbm3CtRgr8tVBKACLcBGAsYHQ/s0/Android_NewForDevelopers_1024x512_updated.png",
     },
   ];
   return (
