@@ -114,6 +114,11 @@ const Home = () => {
   ];
   return (
     <div className="home">
+      {/*search bar*/}
+        <div className="search">
+            <input type="text" placeholder="Search" />
+            <button>Search</button>
+        </div>
       <div className="posts">
         {post.map((post) => (
           <div className="post" key={post.id}>
