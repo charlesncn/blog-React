@@ -5,10 +5,20 @@ const Home = () => {
 
   const [searchQuery, setSearchQuery] = useState('')
   const [filteredPost, setFilteredPost] = useState([])
+  const [showPopUp, setShowPopUp] = useState(false)
 
   const handleSearch = () => {
     const filtered= post.filter((post) =>
         post.title.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()))
+
+    if (filtered.length === 0) {
+      setShowPopUp(true)
+      setTimeout(() =>{
+        setShowPopUp(false)
+      }, 5000)
+    } else {
+      setShowPopUp(false)
+    }
     setFilteredPost(filtered)
   }
 
@@ -133,6 +143,9 @@ const Home = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div>
+        {showPopUp && <div className="popUp">No blog found matching '{searchQuery}'</div>}
       </div>
     </div>
   );

@@ -152,6 +152,19 @@ $orange: #cca152;
 
     //--------------- HOME ---------------
     .home {
+      .popUp{
+        position: fixed;
+        top: 1%;
+        left: 1%;
+        padding: 24px 48px;
+        border: 1px solid $outline-color;
+        border-radius: 24px;
+        background-color: $orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+      }
       .search {
         width: max(300px, 50%);
         display: flex;
@@ -525,7 +538,7 @@ $orange: #cca152;
                 color: $white;
               }
             }
-            
+
           }
           .post-tag{
             display: flex;
