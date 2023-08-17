@@ -1,18 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+
+  const [searchQuery, setSearchQuery] = useState('')
+  const [filteredPost, setFilteredPost] = useState([])
+
+  const handleSearch = () => {
+    const filtered= post.filter((post) =>
+        post.title.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()))
+    setFilteredPost(filtered)
+  }
+
   const post = [
     {
       id: 1,
       title: "How to build a website",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. "+
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
-        "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
-        " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor"+
-        " sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet"+
-        " consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet "+
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor"+
@@ -29,9 +34,6 @@ const Home = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor"+
-        " sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet"+
-        " consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet "+
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor",
       img: "https://3.bp.blogspot.com/-dB6ndKqIAuI/XdWeOASO5AI/AAAAAAAANZA/MSbT9mh6bukxkI-tqnu_GARIZZV5WNVhQCLcBGAsYHQ/s1600/image1.gif",
@@ -56,10 +58,6 @@ const Home = () => {
       title: "Become an Adroid Developer",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. "+
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
-        "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
-        " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor"+
-        " sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet"+
         " consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet "+
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
@@ -71,13 +69,10 @@ const Home = () => {
       title: "Become an Adroid Developer",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. "+
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor"+
         " sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet"+
-        " consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet "+
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
-        "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor",
       img: "https://www.multirecruit.com/wp-content/uploads/2022/05/mobiledevelopment-1.png",
     },
@@ -90,7 +85,6 @@ const Home = () => {
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor"+
         " sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet"+
-        " consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet "+
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem"+
         "ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum"+
         " dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor",
@@ -114,13 +108,16 @@ const Home = () => {
   ];
   return (
     <div className="home">
-      {/*search bar*/}
         <div className="search">
-            <input type="text" placeholder="Search" />
-            <button>Search</button>
+            <input
+                type="text"
+                placeholder="Search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}/>
+            <button onClick={handleSearch}>Search</button>
         </div>
       <div className="posts">
-        {post.map((post) => (
+        {(filteredPost.length > 0 ? filteredPost : post).map((post) => (
           <div className="post" key={post.id}>
             <div className="img">
               <img src={post.img} alt="" />
